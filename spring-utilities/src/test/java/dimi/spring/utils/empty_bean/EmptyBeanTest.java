@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 
-@SpringJUnitConfig(EmptyBeanTest.TestConfig.class)
+@SpringJUnitConfig(TestConfig.class)
 public class EmptyBeanTest
 {
     @Autowired @Qualifier(value = "myEmptyBean") EmptyClass emptyClass;
